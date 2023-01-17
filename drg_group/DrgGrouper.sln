@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chs_drg_11", "chs_drg_11\ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suzhou_2022", "suzhou_2022\suzhou_2022.csproj", "{D4A2A1EB-11A0-4CA8-BB67-F23BC85086A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wuxi_2022", "wuxi_2022\wuxi_2022.csproj", "{75340973-2112-4EE9-84EC-2837F4F3ECE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D4A2A1EB-11A0-4CA8-BB67-F23BC85086A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A2A1EB-11A0-4CA8-BB67-F23BC85086A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A2A1EB-11A0-4CA8-BB67-F23BC85086A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75340973-2112-4EE9-84EC-2837F4F3ECE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75340973-2112-4EE9-84EC-2837F4F3ECE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75340973-2112-4EE9-84EC-2837F4F3ECE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75340973-2112-4EE9-84EC-2837F4F3ECE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

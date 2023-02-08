@@ -11,9 +11,19 @@ namespace drg_group.taizhou_2022{
             if (true && adrg_zd.Contains(record.zdList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合BW1入组条件，匹配规则：主诊断匹配");
                     
-                if (MDCB_DRG.BW19_group(record))
+                if (MDCB_DRG.BW11_group(record))
                 {
-                    return "BW19";
+                    return "BW11";
+                }
+    
+                if (MDCB_DRG.BW13_group(record))
+                {
+                    return "BW13";
+                }
+    
+                if (MDCB_DRG.BW15_group(record))
+                {
+                    return "BW15";
                 }
 
                 return "BW1";

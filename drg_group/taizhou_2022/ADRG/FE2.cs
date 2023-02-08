@@ -10,7 +10,12 @@ namespace drg_group.taizhou_2022{
             
             if (true && record.ssList!=null &&record.ssList.Length>0 && adrg_ss.Contains(record.ssList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合FE2入组条件，匹配规则：主手术匹配");
-                
+                    
+                if (MDCF_DRG.FE29_group(record))
+                {
+                    return "FE29";
+                }
+
                 return "FE2";
             }else{
                 return "";

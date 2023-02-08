@@ -8,7 +8,7 @@ namespace drg_group.taizhou_2022{
             String[] adrg_ss={};
             String[] adrg_ss1={};
             
-            if (true && !Base.intersect(record.ssList,Base.SS_VALID)){
+            if (true && (record.ssList==null || record.ssList.Length==0 || !Base.SS_VALID.Contains(record.ssList[0]))){
                 Base.groupMessages.putMessage(record.Index,"符合ZZ1入组条件，匹配规则：无手术");
                     
                 if (MDCZ_DRG.ZZ11_group(record))

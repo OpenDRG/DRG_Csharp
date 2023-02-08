@@ -11,19 +11,9 @@ namespace drg_group.taizhou_2022{
             if (true && adrg_zd.Contains(record.zdList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合HS3入组条件，匹配规则：主诊断匹配");
                     
-                if (MDCH_DRG.HS31_group(record))
+                if (MDCH_DRG.HS39_group(record))
                 {
-                    return "HS31";
-                }
-    
-                if (MDCH_DRG.HS33_group(record))
-                {
-                    return "HS33";
-                }
-    
-                if (MDCH_DRG.HS35_group(record))
-                {
-                    return "HS35";
+                    return "HS39";
                 }
 
                 return "HS3";

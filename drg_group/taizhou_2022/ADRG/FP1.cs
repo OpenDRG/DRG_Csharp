@@ -10,7 +10,22 @@ namespace drg_group.taizhou_2022{
             
             if (true && adrg_zd.Contains(record.zdList[0]) && record.ssList!=null &&record.ssList.Length>0 && adrg_ss.Contains(record.ssList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合FP1入组条件，匹配规则：主诊断匹配、主手术匹配");
-                
+                    
+                if (MDCF_DRG.FP11_group(record))
+                {
+                    return "FP11";
+                }
+    
+                if (MDCF_DRG.FP13_group(record))
+                {
+                    return "FP13";
+                }
+    
+                if (MDCF_DRG.FP15_group(record))
+                {
+                    return "FP15";
+                }
+
                 return "FP1";
             }else{
                 return "";

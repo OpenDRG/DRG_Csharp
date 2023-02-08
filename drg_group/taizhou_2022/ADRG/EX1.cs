@@ -11,11 +11,6 @@ namespace drg_group.taizhou_2022{
             if (true && adrg_zd.Contains(record.zdList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合EX1入组条件，匹配规则：主诊断匹配");
                     
-                if (MDCE_DRG.EX10_group(record))
-                {
-                    return "EX10";
-                }
-    
                 if (MDCE_DRG.EX11_group(record))
                 {
                     return "EX11";

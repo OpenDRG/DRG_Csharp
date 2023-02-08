@@ -11,19 +11,9 @@ namespace drg_group.taizhou_2022{
             if (true && record.ssList!=null &&record.ssList.Length>0 && Base.intersect(record.ssList,adrg_ss) && Base.intersect(record.ssList,adrg_ss1)){
                 Base.groupMessages.putMessage(record.Index,"符合FF2入组条件，匹配规则：双手术匹配");
                     
-                if (MDCF_DRG.FF21_group(record))
+                if (MDCF_DRG.FF29_group(record))
                 {
-                    return "FF21";
-                }
-    
-                if (MDCF_DRG.FF23_group(record))
-                {
-                    return "FF23";
-                }
-    
-                if (MDCF_DRG.FF25_group(record))
-                {
-                    return "FF25";
+                    return "FF29";
                 }
 
                 return "FF2";

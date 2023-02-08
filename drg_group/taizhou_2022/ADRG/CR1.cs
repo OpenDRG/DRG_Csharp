@@ -11,19 +11,9 @@ namespace drg_group.taizhou_2022{
             if (true && adrg_zd.Contains(record.zdList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合CR1入组条件，匹配规则：主诊断匹配");
                     
-                if (MDCC_DRG.CR11_group(record))
+                if (MDCC_DRG.CR19_group(record))
                 {
-                    return "CR11";
-                }
-    
-                if (MDCC_DRG.CR13_group(record))
-                {
-                    return "CR13";
-                }
-    
-                if (MDCC_DRG.CR15_group(record))
-                {
-                    return "CR15";
+                    return "CR19";
                 }
 
                 return "CR1";

@@ -11,19 +11,9 @@ namespace drg_group.taizhou_2022{
             if (true && adrg_zd.Contains(record.zdList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合LV1入组条件，匹配规则：主诊断匹配");
                     
-                if (MDCL_DRG.LV11_group(record))
+                if (MDCL_DRG.LV19_group(record))
                 {
-                    return "LV11";
-                }
-    
-                if (MDCL_DRG.LV13_group(record))
-                {
-                    return "LV13";
-                }
-    
-                if (MDCL_DRG.LV15_group(record))
-                {
-                    return "LV15";
+                    return "LV19";
                 }
 
                 return "LV1";

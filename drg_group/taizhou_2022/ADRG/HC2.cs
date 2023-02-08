@@ -11,19 +11,9 @@ namespace drg_group.taizhou_2022{
             if (true && record.ssList!=null &&record.ssList.Length>0 && adrg_ss.Contains(record.ssList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合HC2入组条件，匹配规则：主手术匹配");
                     
-                if (MDCH_DRG.HC21_group(record))
+                if (MDCH_DRG.HC29_group(record))
                 {
-                    return "HC21";
-                }
-    
-                if (MDCH_DRG.HC23_group(record))
-                {
-                    return "HC23";
-                }
-    
-                if (MDCH_DRG.HC25_group(record))
-                {
-                    return "HC25";
+                    return "HC29";
                 }
 
                 return "HC2";

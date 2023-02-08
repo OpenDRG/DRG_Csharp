@@ -3,19 +3,7 @@ namespace drg_group.taizhou_2022
     public class MDCS_DRG 
     {
     
-        public static bool SR10_group(MedicalRecord record){
-            return record.age<17;
-        }
-    
-        public static bool SB19_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool SZ11_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
-        public static bool SU11_group(MedicalRecord record){
+        public static bool ST11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
@@ -23,11 +11,15 @@ namespace drg_group.taizhou_2022
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool ST11_group(MedicalRecord record){
+        public static bool SB11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool SV11_group(MedicalRecord record){
+        public static bool SU11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool SZ11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
@@ -35,8 +27,8 @@ namespace drg_group.taizhou_2022
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool SR13_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        public static bool SV11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
         public static bool SU13_group(MedicalRecord record){
@@ -47,7 +39,11 @@ namespace drg_group.taizhou_2022
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
-        public static bool SZ13_group(MedicalRecord record){
+        public static bool SR13_group(MedicalRecord record){
+            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        }
+    
+        public static bool SV13_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
@@ -55,8 +51,20 @@ namespace drg_group.taizhou_2022
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
-        public static bool SV13_group(MedicalRecord record){
+        public static bool SZ13_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        }
+    
+        public static bool SB13_group(MedicalRecord record){
+            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        }
+    
+        public static bool SS15_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool SV15_group(MedicalRecord record){
+            return true;
         }
     
         public static bool SR15_group(MedicalRecord record){
@@ -71,15 +79,11 @@ namespace drg_group.taizhou_2022
             return true;
         }
     
+        public static bool SB15_group(MedicalRecord record){
+            return true;
+        }
+    
         public static bool SZ15_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool SV15_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool SS15_group(MedicalRecord record){
             return true;
         }
     

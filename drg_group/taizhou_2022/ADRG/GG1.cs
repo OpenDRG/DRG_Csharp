@@ -11,19 +11,9 @@ namespace drg_group.taizhou_2022{
             if (true && record.ssList!=null &&record.ssList.Length>0 && adrg_ss.Contains(record.ssList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合GG1入组条件，匹配规则：主手术匹配");
                     
-                if (MDCG_DRG.GG11_group(record))
+                if (MDCG_DRG.GG19_group(record))
                 {
-                    return "GG11";
-                }
-    
-                if (MDCG_DRG.GG13_group(record))
-                {
-                    return "GG13";
-                }
-    
-                if (MDCG_DRG.GG15_group(record))
-                {
-                    return "GG15";
+                    return "GG19";
                 }
 
                 return "GG1";

@@ -10,7 +10,12 @@ namespace drg_group.taizhou_2022{
             
             if (true && Base.intersect(record.zdList,adrg_zd) && record.weight>0 && record.weight>=2000 && record.weight<2500 && record.ageDay<=28){
                 Base.groupMessages.putMessage(record.Index,"符合PS3入组条件，匹配规则：某一诊断匹配、体重2000至2500克、新生儿");
-                
+                    
+                if (MDCP_DRG.PS39_group(record))
+                {
+                    return "PS39";
+                }
+
                 return "PS3";
             }else{
                 return "";

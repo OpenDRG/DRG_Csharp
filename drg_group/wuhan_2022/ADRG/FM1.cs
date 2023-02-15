@@ -4,6 +4,7 @@ namespace drg_group.wuhan_2022{
         public static String group(MedicalRecord record)
         {
             String[] adrg_zd={};
+            String[] adrg_zd1={};
             String[] adrg_ss={"36.0601","36.0602","36.0700","36.0700x004","36.0701"};
             String[] adrg_ss1={};
             

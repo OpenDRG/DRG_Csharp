@@ -11,21 +11,28 @@ namespace drg_group
     {
         public String Index;
         public String status;
-        public String[] check_messages;
-        public String[] group_messages;
+        public List<String> messages;
         public String mdc;
         public String adrg;
         public String drg;
         public MedicalRecord record;
-        public GroupResult(String index, String status, String[] check_messages, String[] group_messages, String mdc,
+        public GroupResult(String index, String status, List<String> messages, String mdc,
             String adrg, String drg,MedicalRecord record) {
             Index = index;
             this.status = status;
-            this.check_messages = check_messages;
-            this.group_messages = group_messages;
+            this.messages = messages;
             this.mdc = mdc;
             this.adrg = adrg;
             this.drg = drg;
+            this.record=record;
+        }
+        public GroupResult(String status, List<String> messages, MedicalRecord record) {
+            Index = record.Index;
+            this.status = status;
+            this.messages = messages;
+            this.mdc = "0000";
+            this.adrg = "00";
+            this.drg = "0000";
             this.record=record;
         }
         public GroupResult(MedicalRecord record,String drgCode){
@@ -51,23 +58,18 @@ namespace drg_group
             this.record=record;
         }
         public override String ToString() {
-            String check_messages_str=check_messages==null||check_messages.Length==0?"":"\""+string.Join("|", check_messages)+"\"";
-            String group_messages_str=group_messages==null||group_messages.Length==0?"":"\""+string.Join("|", group_messages)+"\"";
-            return this.record + "\nGroupResult [Index=" + this.Index + ", status=" + this.status + ", check_messages="
-                + check_messages_str + ", group_messages=" + group_messages_str + ", mdc="
-                + this.mdc + ", adrg=" + this.adrg + ", drg=" + this.drg + "]"
-                ;
-            // return this.drg;
+            String messages_str=messages==null||messages.Count==0?"":"\""+string.Join("|", messages)+"\"";
+            return this.record + "\nGroupResult [Index=" + this.Index + ", status=" + this.status + ", messages=" + 
+                messages_str +", mdc="+ this.mdc + ", adrg=" + this.adrg + ", drg=" + this.drg + "]";
         }
         public String ToCsv() 
         {
             String zdList_str=this.record.zdList==null||this.record.zdList.Length==0?"":"\""+string.Join(",", this.record.zdList)+"\"";
             String ssList_str=this.record.ssList==null||this.record.ssList.Length==0?"":"\""+string.Join(",", this.record.ssList)+"\"";
-            String check_messages_str=check_messages==null||check_messages.Length==0?"":"\""+string.Join("|", check_messages)+"\"";
-            String group_messages_str=group_messages==null||group_messages.Length==0?"":"\""+string.Join("|", group_messages)+"\"";
+            String messages_str=messages==null||messages.Count==0?"":"\""+string.Join("|", messages)+"\"";
             return this.Index + "," +this.record.gender + "," + this.record.age + "," + this.record.ageDay + "," + record.weight + "," + 
                 this.record.dept + "," + this.record.inHospitalTime + "," + this.record.leavingType + "," + zdList_str + "," + ssList_str + "," + this.record.remark + ","+
-                this.status + "," + check_messages_str+ "," + group_messages_str + "," + this.mdc + "," + this.adrg + "," + this.drg;
+                this.status + "," + messages_str + "," + this.mdc + "," + this.adrg + "," + this.drg;
         }
     }
 }

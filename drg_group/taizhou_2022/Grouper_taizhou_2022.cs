@@ -7,7 +7,7 @@ namespace drg_group
         public static GroupResult group(MedicalRecord record){
             String drgCode=Grouper.group(record);
             GroupResult result=new GroupResult(record,drgCode);
-            result.group_messages=Base.groupMessages.returnMessages(record.Index).ToArray();
+            result.messages=Base.groupMessages.returnMessages(record.Index);
             return result;
         }
     }

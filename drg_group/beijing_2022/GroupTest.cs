@@ -8,13 +8,12 @@ namespace drg_group
 {
     public class GroupTest
     {
-        private static GroupProxy grouper=new GroupProxy();
         static void Main(string[] args)
         {
-            // String str="22082078,1,24, 9105, 3470,13050201, 6, 1,\"C93.101,D61.101,B99.x01,B49.x14+J99.8*,E77.801,E87.801\",\"00.5500,45.4300x010,45.4300x013\"";
-            // Console.WriteLine(grouper.group_record(new GroupProxy.GroupDelegate(Grouper_beijing_2022.group),Common.replace_csv(str))); 
+            GroupProxy grouper=new GroupProxy();
+            // Console.WriteLine(grouper.group_record("22082078,1,24, 9105, 3470,13050201, 6, 1,\"K63.500,K52.910\",\"00.5500,45.4300x010,45.4300x013\"")); 
             // grouper.group_txt();
-            // group();
+            // group(grouper);
             // System.Environment.Exit(-1);
 
             if (args==null||args.Length==0){
@@ -35,11 +34,11 @@ namespace drg_group
                 grouper.group_csv(args[0],args[1].Split(","));
             }
         }
-        // public static void group(){
+        // public static void group(GroupProxy grouper){
         //     String yearMonth="202212";
         //     var filename=Path.Combine("c:\\yb\\yc",String.Format("ba_group_info_{0}.csv", yearMonth));
         //     String[] cols={"BAHM","BRXB","NL","NLT","XSECSTZ","CYKS","ZYTS","LYFS","ICD10_DRGS","ICD9_DRGS"};
-        //     grouper.group_csv(new GroupDelegate(Grouper_beijing_2022.group),filename,cols);
+        //     grouper.group_csv(filename,cols);
         // }
     }
 }

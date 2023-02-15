@@ -15,11 +15,11 @@ namespace drg_group.wuhan_2022
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool YR13_group(MedicalRecord record){
+        public static bool YC13_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
-        public static bool YC13_group(MedicalRecord record){
+        public static bool YR13_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     

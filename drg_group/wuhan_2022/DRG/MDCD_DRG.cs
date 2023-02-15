@@ -3,7 +3,7 @@ namespace drg_group.wuhan_2022
     public class MDCD_DRG 
     {
     
-        public static bool DD29_group(MedicalRecord record){
+        public static bool DA19_group(MedicalRecord record){
             return true;
         }
     
@@ -11,19 +11,7 @@ namespace drg_group.wuhan_2022
             return true;
         }
     
-        public static bool DV19_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool DW19_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool DE29_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool DS19_group(MedicalRecord record){
+        public static bool DB29_group(MedicalRecord record){
             return true;
         }
     
@@ -39,11 +27,15 @@ namespace drg_group.wuhan_2022
             return true;
         }
     
-        public static bool DA19_group(MedicalRecord record){
+        public static bool DD29_group(MedicalRecord record){
             return true;
         }
     
-        public static bool DB29_group(MedicalRecord record){
+        public static bool DE29_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool DG19_group(MedicalRecord record){
             return true;
         }
     
@@ -55,7 +47,15 @@ namespace drg_group.wuhan_2022
             return true;
         }
     
-        public static bool DG19_group(MedicalRecord record){
+        public static bool DS19_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool DV19_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool DW19_group(MedicalRecord record){
             return true;
         }
     
@@ -63,11 +63,11 @@ namespace drg_group.wuhan_2022
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool DR11_group(MedicalRecord record){
+        public static bool DK11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool DZ11_group(MedicalRecord record){
+        public static bool DR11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
@@ -79,23 +79,15 @@ namespace drg_group.wuhan_2022
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool DK11_group(MedicalRecord record){
+        public static bool DZ11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
-        public static bool DT1A_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
         public static bool DE1A_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
-        public static bool DZ13_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
-        }
-    
-        public static bool DT23_group(MedicalRecord record){
+        public static bool DT1A_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
@@ -103,7 +95,15 @@ namespace drg_group.wuhan_2022
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
+        public static bool DT23_group(MedicalRecord record){
+            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        }
+    
         public static bool DU13_group(MedicalRecord record){
+            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        }
+    
+        public static bool DZ13_group(MedicalRecord record){
             return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
         }
     
@@ -112,18 +112,6 @@ namespace drg_group.wuhan_2022
         }
     
         public static bool DR1B_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool DU15_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool DZ15_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool DT25_group(MedicalRecord record){
             return true;
         }
     
@@ -136,6 +124,18 @@ namespace drg_group.wuhan_2022
         }
     
         public static bool DT15_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool DT25_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool DU15_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool DZ15_group(MedicalRecord record){
             return true;
         }
     

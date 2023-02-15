@@ -3,15 +3,11 @@ namespace drg_group.wuhan_2022
     public class MDCP_DRG 
     {
     
+        public static bool PB19_group(MedicalRecord record){
+            return true;
+        }
+    
         public static bool PC19_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool PV19_group(MedicalRecord record){
-            return true;
-        }
-    
-        public static bool PS19_group(MedicalRecord record){
             return true;
         }
     
@@ -23,11 +19,19 @@ namespace drg_group.wuhan_2022
             return true;
         }
     
+        public static bool PS19_group(MedicalRecord record){
+            return true;
+        }
+    
         public static bool PT19_group(MedicalRecord record){
             return true;
         }
     
-        public static bool PB19_group(MedicalRecord record){
+        public static bool PT29_group(MedicalRecord record){
+            return true;
+        }
+    
+        public static bool PV19_group(MedicalRecord record){
             return true;
         }
     

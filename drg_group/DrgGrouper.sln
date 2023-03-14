@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lanzhou_2022", "lanzhou_202
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fuzhou_2022", "fuzhou_2022\fuzhou_2022.csproj", "{D73DF0F4-026A-4F87-899B-782A917260B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zhejiang_2022", "zhejiang_2022\zhejiang_2022.csproj", "{9B06238A-6579-4ECA-8E1C-CFBDCD7C3309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xian_2020", "xian_2020\xian_2020.csproj", "{002B6283-E141-4688-942B-1683D2DBE84F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{D73DF0F4-026A-4F87-899B-782A917260B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D73DF0F4-026A-4F87-899B-782A917260B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D73DF0F4-026A-4F87-899B-782A917260B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B06238A-6579-4ECA-8E1C-CFBDCD7C3309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B06238A-6579-4ECA-8E1C-CFBDCD7C3309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B06238A-6579-4ECA-8E1C-CFBDCD7C3309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B06238A-6579-4ECA-8E1C-CFBDCD7C3309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{002B6283-E141-4688-942B-1683D2DBE84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002B6283-E141-4688-942B-1683D2DBE84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002B6283-E141-4688-942B-1683D2DBE84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002B6283-E141-4688-942B-1683D2DBE84F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

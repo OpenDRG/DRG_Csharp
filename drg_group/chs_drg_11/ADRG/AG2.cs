@@ -1,9 +1,10 @@
-namespace drg_group.chs_drg_11{
-    public class AG2 
+namespace drg_group.tongchuan_2022{
+    public class AG2
     {
         public static String group(MedicalRecord record)
         {
             String[] adrg_zd={};
+            String[] adrg_zd1={};
             String[] adrg_ss={"41.0100","41.0401","41.0701","41.0900"};
             String[] adrg_ss1={};
             

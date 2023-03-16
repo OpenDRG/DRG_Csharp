@@ -1,21 +1,21 @@
-namespace drg_group.chs_drg_11
+namespace drg_group.tongchuan_2022
 {
     public class MDCQ_DRG 
     {
-    
-        public static bool QS11_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
     
         public static bool QR11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool QS41_group(MedicalRecord record){
+        public static bool QS11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
         public static bool QS31_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool QS41_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     

@@ -1,4 +1,4 @@
-namespace drg_group.chs_drg_11
+namespace drg_group.tongchuan_2022
 {
     public class MDCB_DRG 
     {
@@ -35,31 +35,11 @@ namespace drg_group.chs_drg_11
             return true;
         }
     
-        public static bool BR21_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
         public static bool BB11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool BY21_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
-        public static bool BT21_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
-        public static bool BV21_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
-        public static bool BU31_group(MedicalRecord record){
-            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
-        }
-    
-        public static bool BY11_group(MedicalRecord record){
+        public static bool BB21_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
@@ -67,15 +47,19 @@ namespace drg_group.chs_drg_11
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool BX11_group(MedicalRecord record){
+        public static bool BD11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool BZ11_group(MedicalRecord record){
+        public static bool BM11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool BV11_group(MedicalRecord record){
+        public static bool BR11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BR21_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
@@ -83,28 +67,44 @@ namespace drg_group.chs_drg_11
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool BB21_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
-        }
-    
-        public static bool BD11_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
-        }
-    
-        public static bool BM11_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
-        }
-    
-        public static bool BR11_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+        public static bool BT21_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
         public static bool BU11_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
         public static bool BU21_group(MedicalRecord record){
-            return record.zdList.Length>1 && (Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]) || Base.has_cc(record.Index,record.zdList[0],record.zdList[1..]));
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BU31_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BV11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BV21_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BX11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BY11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BY21_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
+        }
+    
+        public static bool BZ11_group(MedicalRecord record){
+            return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
         public static bool BB13_group(MedicalRecord record){

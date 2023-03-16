@@ -1,4 +1,4 @@
-namespace drg_group.chs_drg_11
+namespace drg_group.tongchuan_2022
 {
     public class MDCZ
     {
@@ -21,10 +21,10 @@ namespace drg_group.chs_drg_11
         String[] zd_matched=record.zdList.Intersect(zd_map.Keys).ToArray();
         HashSet<String> types=record.zdList.Where(x=>zd_map.ContainsKey(x)).Select(x=>zd_map[x]).ToHashSet();
         if (zd_matched.Length>0){
-            Base.groupMessages.putMessage(record.Index,String.Format("诊断{0}在self.MDCZ的主诊表内",String.Join(",",zd_matched)));
-            Base.groupMessages.putMessage(record.Index,String.Format("诊断匹配self.MDCZ部位：{0}",String.Join(",",types)));
+            Base.groupMessages.putMessage(record.Index,String.Format("诊断{0}在MDCZ的主诊表内",String.Join(",",zd_matched)));
+            Base.groupMessages.putMessage(record.Index,String.Format("诊断匹配MDCZ部位：{0}",String.Join(",",types)));
             if (types.Count<2){
-                Base.groupMessages.putMessage(record.Index,"诊断匹配部位数量不符合self.MDCZ要求");
+                Base.groupMessages.putMessage(record.Index,"诊断匹配部位数量不符合MDCZ要求");
                 return "";
             }
         }else{
@@ -54,7 +54,7 @@ namespace drg_group.chs_drg_11
                 return result;
             }
     
-            if (false && record.ssList!=null && record.ssList.Length>0  && Base.intersect(record.ssList,Base.SS_VALID)){
+            if (false && record.ssList!=null && record.ssList.Length>0  && Base.intersect(Base.SS_VALID,record.ssList)){
                 Base.groupMessages.putMessage(record.Index,"符合ZQY入组条件，存在有效手术操作："+record.ssList.Intersect(Base.SS_VALID));
                 return "ZQY";
             }

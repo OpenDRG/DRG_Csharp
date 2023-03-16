@@ -26,7 +26,7 @@
 |CHS-DRG 1.1<br>兰州2022细分组|drg_group/lanzhou_2022|792组| 适用于甘肃省兰州市2022版细分组|
 |CHS-DRG 1.1<br>福州2022细分组|drg_group/fuzhou_2022|563组| 适用于福建省福州市2022版细分组|
 |ZJ-DRG 1.1<br>浙江2022细分组|drg_group/zhejiang_2022|1006组| 适用于浙江省2022版细分组|
-|CHS-DRG 1.0修订版<br>西安2020细分组|drg_group/xian_2020|618组| 适用于陕西省西安市2020版细分组|
+|CHS-DRG 1.0修订版<br>西安2020细分组|drg_group/chs_drg_10|618组| 适用于陕西省西安市2020版细分组|
 |CHS-DRG 1.1<br>铜川2022细分组|drg_group/tongchuan_2022|628组| 适用于陕西省铜川市2022版细分组|
 |CHS-DRG 1.1<br>长株潭衡2023细分组|drg_group/changsha_2022|737组| 适用于湖南省长株潭衡区域2023版细分组|
 

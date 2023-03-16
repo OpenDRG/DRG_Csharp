@@ -1,4 +1,4 @@
-namespace drg_group.chs_drg_11
+namespace drg_group.tongchuan_2022
 {
     public class MDCS_DRG 
     {
@@ -7,11 +7,11 @@ namespace drg_group.chs_drg_11
             return true;
         }
     
-        public static bool SR11_group(MedicalRecord record){
+        public static bool SB11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool SV11_group(MedicalRecord record){
+        public static bool SR11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
@@ -19,7 +19,7 @@ namespace drg_group.chs_drg_11
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     
-        public static bool SB11_group(MedicalRecord record){
+        public static bool SV11_group(MedicalRecord record){
             return record.zdList.Length>1 && Base.has_mcc(record.Index,record.zdList[0],record.zdList[1..]);
         }
     

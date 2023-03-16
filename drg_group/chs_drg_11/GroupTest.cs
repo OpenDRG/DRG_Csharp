@@ -8,11 +8,10 @@ namespace drg_group
 {
     public class GroupTest
     {
-        private static GroupProxy grouper=new GroupProxy();
         static void Main(string[] args)
         {
-            // String str="22082078,1,24, 9105, 3470,13050201, 6, 1,\"K63.500,K52.910\",\"00.5500,45.4300x010,45.4300x013\"";
-            // Console.WriteLine(grouper.group_record(new GroupDelegate(Grouper_chs_drg_11.group),Common.replace_csv(str))); 
+            GroupProxy grouper=new GroupProxy();
+            // Console.WriteLine(grouper.group_record("22082078,1,24, 9105, 3470,13050201, 6, 1,\"K63.500,K52.910\",\"00.5500,45.4300x010,45.4300x013\"")); 
             // System.Environment.Exit(-1);
             if (args==null||args.Length==0){
                 var path=System.IO.Directory.GetCurrentDirectory();

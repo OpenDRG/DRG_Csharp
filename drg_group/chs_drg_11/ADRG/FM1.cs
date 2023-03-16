@@ -1,10 +1,11 @@
-namespace drg_group.chs_drg_11{
-    public class FM1 
+namespace drg_group.tongchuan_2022{
+    public class FM1
     {
         public static String group(MedicalRecord record)
         {
             String[] adrg_zd={};
-            String[] adrg_ss={"36.0601","36.0602","36.0700x004","36.0701"};
+            String[] adrg_zd1={};
+            String[] adrg_ss={"36.0601","36.0602","36.0700x004","36.0701","36.0700"};
             String[] adrg_ss1={};
             
             if (true && record.ssList!=null &&record.ssList.Length>0 && adrg_ss.Contains(record.ssList[0])){

@@ -15,8 +15,12 @@ namespace drg_group
             return lines.ToDictionary(x=>x.Substring(0,x.IndexOf(" ")),x=>x.Substring(x.IndexOf(" ")+1));
         }
         private static String[] getLines(String dataFile){
-            var path=AppDomain.CurrentDomain.BaseDirectory;
-            var filename=Path.Combine(path,"DATA",dataFile);
+            // Console.WriteLine("a:"+AppDomain.CurrentDomain.BaseDirectory);
+            // Console.WriteLine("b:"+System.Threading.Thread.GetDomain().BaseDirectory);
+            // Console.WriteLine("c:"+Environment.CurrentDirectory);
+            // Console.WriteLine("d:"+System.IO.Directory.GetCurrentDirectory());
+            // Console.WriteLine("e:"+System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
+            var filename=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"DATA",dataFile);
             return File.ReadAllLines(filename);
         }
         public static bool has_cc(String index,String mainZd,String[] otherZd){

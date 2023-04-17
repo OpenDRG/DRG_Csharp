@@ -21,14 +21,14 @@
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
             // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-            "name": "suzhou_2022",
+            "name": "suzhou_2023",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/suzhou_2022/bin/Debug/net6.0/suzhou_2022.dll",
+            "program": "${workspaceFolder}/suzhou_2023/bin/Debug/net6.0/suzhou_2023.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/suzhou_2022",
+            "cwd": "${workspaceFolder}/suzhou_2023",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

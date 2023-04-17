@@ -1,4 +1,0 @@
-cd %~dp0
-lanzhou_2022 "22058878,2,88,32460,,13040503,94,1,K22.301|K11.901|E11.900|I10.x05,96.0800x005"
-@REM lanzhou_2022 "c:\\yb\\lz\\ba_group_2022.csv" "BAH,XB,NL,NLT,XSECSTZ,CYKBDM,ZYTS,LYFS,zdbms,ssbms,YBJSLSH"
-pause

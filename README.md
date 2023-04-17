@@ -1,7 +1,7 @@
-## 分组器版本(C#)说明
+## 分组器版本
 国家医保局CHS-DRG分组器，C#实现版
 
-|分组器|实现的分组方案|
+|分组器版本|实现的分组方案|
 |-|-|
 |drg_group/chs_drg_11|CHS-DRG 1.1标准版、铜川版、临沂版|
 |drg_group/chs_drg_10|CHS-DRG 1.0修订版、西安版、成都版|
@@ -14,6 +14,7 @@
 |drg_group/lanzhou_2023|兰州版|
 |drg_group/fuzhou_2022|福州版|
 |drg_group/zhejiang_2022|浙江版|
+|drg_group/wlmq_2022|乌鲁木齐版|
 |drg_group/changsha_2022|长株潭衡区域版|
 |drg_group/yantai_2023|烟台版|
 |drg_group/changzhou_2022|常州版|

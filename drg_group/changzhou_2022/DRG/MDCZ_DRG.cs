@@ -39,5 +39,13 @@ namespace drg_group.changzhou_2022
             return true;
         }
     
+        public static bool ZC14_group(MedicalRecord record){
+            return record.ssList.length>1 && Base.intersect(record.ssList[1..],new String[]{"31.1x00x005","31.2100x001","31.2900x001","31.7400","31.7400x001","96.0400"});
+        }
+    
+        public static bool ZC18_group(MedicalRecord record){
+            return true;
+        }
+    
     }
 }

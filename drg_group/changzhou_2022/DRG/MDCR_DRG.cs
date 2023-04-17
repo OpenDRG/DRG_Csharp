@@ -139,5 +139,17 @@ namespace drg_group.changzhou_2022
             return true;
         }
     
+        public static bool RU10_group(MedicalRecord record){
+            return record.inHospitalTime<=7;
+        }
+    
+        public static bool RU12_group(MedicalRecord record){
+            return record.inHospitalTime>7 && record.inHospitalTime<=30;
+        }
+    
+        public static bool RU14_group(MedicalRecord record){
+            return record.inHospitalTime>30 && record.inHospitalTime<=60;
+        }
+    
     }
 }

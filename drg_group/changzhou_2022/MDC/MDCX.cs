@@ -17,7 +17,7 @@ namespace drg_group.changzhou_2022
                 return result;
             }
     
-            if (false && record.ssList!=null && record.ssList.Length>0  && Base.intersect(Base.SS_VALID,record.ssList)){
+            if (false && record.ssList!=null && record.ssList.Length>0 && Base.SS_VALID.Contains(record.ssList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合XQY入组条件，存在有效手术操作："+record.ssList.Intersect(Base.SS_VALID));
                 return "XQY";
             }

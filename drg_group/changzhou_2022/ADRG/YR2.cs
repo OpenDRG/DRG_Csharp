@@ -3,13 +3,13 @@ namespace drg_group.changzhou_2022{
     {
         public static String group(MedicalRecord record)
         {
-            String[] adrg_zd={};
+            String[] adrg_zd={"R75.x00x001","Z21.x00x001"};
             String[] adrg_zd1={};
             String[] adrg_ss={};
             String[] adrg_ss1={};
             
-            if (true){
-                Base.groupMessages.putMessage(record.Index,"符合YR2入组条件，匹配规则：");
+            if (true && Base.intersect(record.zdList,adrg_zd)){
+                Base.groupMessages.putMessage(record.Index,"符合YR2入组条件，匹配规则：某一诊断匹配");
                     
                 if (MDCY_DRG.YR29_group(record))
                 {

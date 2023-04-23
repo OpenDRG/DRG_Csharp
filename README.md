@@ -1,3 +1,5 @@
+# OpenDRG的目标是成为国家医保局CHS-DRG的开源实现，就像OpenJDK是Java SE的开源实现一样
+
 ## 分组器版本
 国家医保局CHS-DRG分组器，C#实现版
 

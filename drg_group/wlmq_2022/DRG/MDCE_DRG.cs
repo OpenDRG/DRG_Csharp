@@ -175,10 +175,6 @@ namespace drg_group.wlmq_2022
             return true;
         }
     
-        public static bool EV25_group(MedicalRecord record){
-            return true;
-        }
-    
         public static bool EW15_group(MedicalRecord record){
             return true;
         }

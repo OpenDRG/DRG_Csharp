@@ -7,13 +7,18 @@ namespace drg_group.wlmq_2022{
             String[] adrg_zd1={};
             String[] adrg_ss={};
             String[] adrg_ss1={};
-            
+            String[] adrg_ss2={};
             if (true && adrg_zd.Contains(record.zdList[0])){
                 Base.groupMessages.putMessage(record.Index,"符合BR1入组条件，匹配规则：主诊断匹配");
                     
                 if (MDCB_DRG.BR11_group(record))
                 {
                     return "BR11";
+                }
+    
+                if (MDCB_DRG.BR13_group(record))
+                {
+                    return "BR13";
                 }
     
                 if (MDCB_DRG.BR15_group(record))

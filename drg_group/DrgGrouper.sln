@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qingdao_2023", "qingdao_202
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linfen_2022", "linfen_2022\linfen_2022.csproj", "{35188132-5A1F-4964-87CD-9382F6178B06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wlmq_2022", "wlmq_2022\wlmq_2022.csproj", "{CF241E3F-1887-4B84-86C2-E774FD4B35B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{35188132-5A1F-4964-87CD-9382F6178B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35188132-5A1F-4964-87CD-9382F6178B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35188132-5A1F-4964-87CD-9382F6178B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF241E3F-1887-4B84-86C2-E774FD4B35B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF241E3F-1887-4B84-86C2-E774FD4B35B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF241E3F-1887-4B84-86C2-E774FD4B35B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF241E3F-1887-4B84-86C2-E774FD4B35B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -247,6 +247,10 @@ namespace drg_group.wlmq_2022
             return true;
         }
     
+        public static bool FV25_group(MedicalRecord record){
+            return true;
+        }
+    
         public static bool FV35_group(MedicalRecord record){
             return true;
         }

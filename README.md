@@ -22,6 +22,7 @@
 |drg_group/changzhou_2022|常州版|
 |drg_group/qingdao_2023|青岛版|
 |drg_group/linfen_2022|临汾版|
+|drg_group/qingyang_2023|庆阳版|
 
 &emsp;&emsp;其他地区版本的分组器将逐步发布，敬请关注
 
